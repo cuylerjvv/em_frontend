@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+Employee management software
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains fuel station management software designed to streamline the operations of a fuel station and simplify employee management. The software provides an intuitive interface to create and manage employees, generate shift lists, and calculate wages efficiently.
 
-## Available Scripts
+Tech stack:
 
-In the project directory, you can run:
+- React.js
+- Node.js
+- Express.js
+- MongoDB
 
-### `npm start`
+Core functionality:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Create and manage employees
+- Create shift lists by assigning employees to shifts.
+- View the wages per week based on the shift lists created. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The client has two fuel stations, thus the app and database is split in to two parts. 
+On the home screen you can select the fuel station you want to work with. 
 
-### `npm test`
+![home-page](./frontend/src/images/FMS-Home.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Once a fuel station has been selected, the main menu is displayed.
+From here you can select whether you want to go to the employees page, shift lists page, or the wages pages.
 
-### `npm run build`
+![menu-page](./frontend/src/images/FMS-Menu.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Employees page:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+On the employees page, you can view the current employees or create new employees.
+The employees and their relevant information is stored in a MongoDB database.  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![employee-page](./frontend/src/images/FMS-Employees.png)
 
-### `npm run eject`
+Shift list page: 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+On the shift list page the created shift lists are displayed. 
+You can select from the current created employees to assign them to shifts
+The shift lists are stored in a MongoDB database.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![shift-list-page](./frontend/src/images/FMS-Shift-lists.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Wages page: 
+ 
+On the wages page you can see the calculated wages of each employee for the relevant shift list. 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![wages-page](./frontend/src/images/FMS-Wages.png)
