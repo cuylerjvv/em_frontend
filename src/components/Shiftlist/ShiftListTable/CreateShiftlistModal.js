@@ -15,13 +15,13 @@ function CreateShiftlistModal(props) {
 
   const [employeesList, setEmployeesList] = useState([])
   const [isLoading, setIsLoading] = useState(false)
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false); 
 
   useEffect(() => {
     const request = async () => {
       setIsLoading(true)
       const employeeObjects = []
-      const response = await fetch(process.env.REACT_APP_BACKEND_URL + `/${location}/shiftlist/create`);
+      const response = await fetch(`https://employee-management-backend.cyclic.app/${location}/shiftlist/create`);
       const responseData = await response.json();
       responseData.employee.map((employee) => {
         const employeeObject = {
