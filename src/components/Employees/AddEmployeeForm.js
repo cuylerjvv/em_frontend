@@ -50,7 +50,7 @@ function AddEmployeeForm(props) {
 
         // MAKE A GET REQUEST AFTER SUBMITTING FORM TO GET THE LATEST EMPLOYEE ADDED ASWELL
         try {
-            const response = await fetch(process.env.REACT_APP_BACKEND_URL + `/${location}/employees`, {
+            const response = await fetch(`https://employee-management-backend.cyclic.app/${location}/employees`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -80,7 +80,7 @@ function AddEmployeeForm(props) {
 
         const request = async () => {
             setIsLoading(true)
-            const response = await fetch(process.env.REACT_APP_BACKEND_URL + `/${location}/employees`);
+            const response = await fetch(`https://employee-management-backend.cyclic.app/${location}/employees`);
             const responseData = await response.json();
             console.log("Hooray!")
             props.setEmployeesList(responseData.employee)

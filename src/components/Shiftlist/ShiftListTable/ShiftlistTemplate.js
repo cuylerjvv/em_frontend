@@ -28,7 +28,7 @@ function ShiftlistTemplate() {
     const navigate = useNavigate();
 
     const deleteHandler = async (id) => {
-        const url = process.env.REACT_APP_BACKEND_URL + `/${params.location}/shiftlist`;
+        const url = `https://employee-management-backend.cyclic.app/${params.location}/shiftlist`;
         try {
             await sendRequest(
                 url,
