@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 export const getShiftlists = createAsyncThunk('shiftlists/getShiftlists', async (location) => {
     console.log(location + " shiftlist reducer")
-    const response = await fetch(process.env.BACKEND + `/${location}/shiftlist`);
+    const response = await fetch(`https://employee-management-backend.cyclic.app/${location}/shiftlist`);
     const responseData = await response.json();
     console.log(responseData)
     console.log(responseData.shiftlist)

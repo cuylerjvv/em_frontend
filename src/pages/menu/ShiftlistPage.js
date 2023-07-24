@@ -62,7 +62,7 @@ function ShiftlistPage() {
                                     variant='h3'
                                     color="#dd1d21"
                                 >
-                                    {location} wages
+                                    {location} shift lists
                                 </Typography> :
 
                                 <Typography

@@ -19,13 +19,13 @@ function WagesTemplate(props) {
     setOpen(true);
     console.log("handleOpen")
   };
-
+ 
   const handleClose = () => {
     setOpen(false);
   }; 
 
   const { data } = useQuery(["Wages"], async () => {
-    const response = await fetch(process.env.BACKEND + `/${location}/wages/${props.firstday}`);
+    const response = await fetch(`https://employee-management-backend.cyclic.app/${location}/wages/${props.firstday}`);
     const data = await response.json();
     console.log(data)
     return data

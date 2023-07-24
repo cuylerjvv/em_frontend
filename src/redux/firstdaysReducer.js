@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 export const getFirstdays = createAsyncThunk('firstdays/getFirstdays', async (location) => {
     console.log(location + " firstdays reducer")
-    const response = await fetch(process.env.BACKEND + `/${location}`);
+    const response = await fetch(`https://employee-management-backend.cyclic.app/${location}`);
     const responseData = await response.json();
     console.log(responseData)
     console.log(responseData.firstdays)

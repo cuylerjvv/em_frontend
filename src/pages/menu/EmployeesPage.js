@@ -18,14 +18,14 @@ const EmployeesPage = () => {
     const location = params.location.charAt(0).toUpperCase() + params.location.slice(1);
 
     const [employeesList, setEmployeesList] = useState([])
-    const [addEmployeePopUp, setAddEmployeePopUp] = useState(false);
+    const [addEmployeePopUp, setAddEmployeePopUp] = useState(false); 
     const [isLoading, setIsLoading] = useState(false)
 
     // request is in an useEffect hook because it should not rerender when the page rerenders. The dependancies are empty because it should only run on page load and not again. 
     useEffect(() => {
         const request = async () => {
             setIsLoading(true)
-            const response = await fetch(process.env.BACKEND + `/${params.location}/employees`);
+            const response = await fetch(`https://employee-management-backend.cyclic.app/${params.location}/employees`);
             const responseData = await response.json();
             console.log(responseData);
             setEmployeesList(responseData.employee)
