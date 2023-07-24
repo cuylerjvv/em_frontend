@@ -9,6 +9,7 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
+import CircularProgress from '@mui/material/CircularProgress';
 
 import '../stations/LocationMenuPage.css'
 
@@ -277,72 +278,90 @@ function WagesPage() {
                                     </Box>
                                 </Box>
                             </div> : (
-                                loading || allowNav ? <p>loading...</p> : (
+                                loading || allowNav ?
                                     <div
                                         className='bg'
                                     >
-                                        <Box
-                                            sx={{
-                                                display: 'flex',
-                                                justifyContent: 'center',
-                                                alignItems: 'center',
-                                                paddingTop: '5rem'
-                                            }}
+                                        <Container
+                                            maxWidth="xl"
                                         >
-                                            <Button
+                                            <Box
                                                 sx={{
-                                                    backgroundColor: '#dd1d21',
-                                                    boxShadow: 'none',
-                                                    width: '9rem',
-                                                    '&:hover': {
-                                                        boxShadow: 'none'
-                                                    },
+                                                    display: 'flex',
+                                                    justifyContent: 'center',
+                                                    margin: 'auto',
+                                                    paddingTop: '5rem',
                                                 }}
-                                                color='error'
-                                                variant='contained'
-                                                startIcon={<ArrowLeftIcon />}
-                                                onClick={() => (prevWages())}
                                             >
-                                                Previous
-                                            </Button>
-                                            <Button
+                                                <CircularProgress />
+                                            </Box>
+                                        </Container>
+                                    </div> : (
+                                        <div
+                                            className='bg'
+                                        >
+                                            <Box
                                                 sx={{
-                                                    pointerEvents: 'none',
-                                                    backgroundColor: '#dd1d21',
-                                                    boxShadow: 'none',
-                                                    m: '0 1rem 0 1rem',
-                                                    '&:hover': {
-                                                        boxShadow: 'none'
-                                                    },
+                                                    display: 'flex',
+                                                    justifyContent: 'center',
+                                                    alignItems: 'center',
+                                                    paddingTop: '5rem'
                                                 }}
-
-                                                color='error'
-                                                variant='contained'
                                             >
-                                                <h3>Week start date: {date}</h3>
-                                            </Button>
-                                            <Button
-                                                sx={{
-                                                    backgroundColor: '#dd1d21',
-                                                    boxShadow: 'none',
-                                                    width: '9rem',
-                                                    '&:hover': {
-                                                        boxShadow: 'none'
-                                                    },
-                                                }}
-                                                color='error'
-                                                variant='contained'
-                                                endIcon={<ArrowRightIcon />}
-                                                onClick={() => (nextWages())}
-                                            >
-                                                Next
-                                            </Button>
-                                        </Box>
+                                                <Button
+                                                    sx={{
+                                                        backgroundColor: '#dd1d21',
+                                                        boxShadow: 'none',
+                                                        width: '9rem',
+                                                        '&:hover': {
+                                                            boxShadow: 'none'
+                                                        },
+                                                    }}
+                                                    color='error'
+                                                    variant='contained'
+                                                    startIcon={<ArrowLeftIcon />}
+                                                    onClick={() => (prevWages())}
+                                                >
+                                                    Previous
+                                                </Button>
+                                                <Button
+                                                    sx={{
+                                                        pointerEvents: 'none',
+                                                        backgroundColor: '#dd1d21',
+                                                        boxShadow: 'none',
+                                                        m: '0 1rem 0 1rem',
+                                                        '&:hover': {
+                                                            boxShadow: 'none'
+                                                        },
+                                                    }}
 
-                                        <WagesTemplate firstday={firstdays[index]?.firstDay} />
+                                                    color='error'
+                                                    variant='contained'
+                                                >
+                                                    <h3>Week start date: {date}</h3>
+                                                </Button>
+                                                <Button
+                                                    sx={{
+                                                        backgroundColor: '#dd1d21',
+                                                        boxShadow: 'none',
+                                                        width: '9rem',
+                                                        '&:hover': {
+                                                            boxShadow: 'none'
+                                                        },
+                                                    }}
+                                                    color='error'
+                                                    variant='contained'
+                                                    endIcon={<ArrowRightIcon />}
+                                                    onClick={() => (nextWages())}
+                                                >
+                                                    Next
+                                                </Button>
+                                            </Box>
 
-                                    </div>
-                                ))) :
+                                            <WagesTemplate firstday={firstdays[index]?.firstDay} />
+
+                                        </div>
+                                    ))) :
                         <div
                             className='bg'
                         >
@@ -424,7 +443,7 @@ function WagesPage() {
                                 alignItems='center'
                             >
                                 <Typography
-                                    variant="h6" 
+                                    variant="h6"
                                     component="h2"
                                     textAlign='center'
                                 >
@@ -451,8 +470,8 @@ function WagesPage() {
                     </div>
             }
 
-                    </div>
+        </div>
     );
 }
 
-            export default WagesPage;
+export default WagesPage;
