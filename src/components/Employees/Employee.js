@@ -48,7 +48,7 @@ function Employee(props) {
 
   const onDelete = async () => {
 
-    const url = process.env.REACT_APP_BACKEND_URL + `/${params.location}/employees`;
+    const url = `https://employee-management-backend.cyclic.app/${params.location}/employees`;
 
     // try and catch error function should be added
     try {

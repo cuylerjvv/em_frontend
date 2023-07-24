@@ -133,7 +133,7 @@ function CreateShiftlist() {
         console.log("Shiftlist has been submitted.")
 
         try {
-            const response = await fetch(process.env.REACT_APP_BACKEND_URL + `/${params.location}/shiftlist/create`, {
+            const response = await fetch(`https://employee-management-backend.cyclic.app/${params.location}/shiftlist/create`, {
                 method: 'POST',
                 headers: {
 
