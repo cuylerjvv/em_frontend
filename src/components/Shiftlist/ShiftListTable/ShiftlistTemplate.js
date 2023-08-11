@@ -72,7 +72,7 @@ function ShiftlistTemplate() {
             {params.location === 'dixie' ? (
                 loading ? (
                     <Container
-                        maxWidth="xl"
+                        maxWidth="xxl"
                     >
                         <Box
                             sx={{
@@ -218,7 +218,7 @@ function ShiftlistTemplate() {
                     ))) : (
                 loading ? (
                     <Container
-                        maxWidth="xl"
+                        maxWidth="xxl"
                     >
                         <Box
                             sx={{

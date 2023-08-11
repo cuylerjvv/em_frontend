@@ -54,7 +54,7 @@ const EmployeesPage = () => {
                     borderBottom: '0.5px solid #dd1d21',
                     background: 'linear-gradient(to right, #FFffff, #999999)'
                 }}
-                maxWidth="xl"
+                maxWidth="xxl"
             >
                 <Box
                     sx={{
@@ -94,7 +94,7 @@ const EmployeesPage = () => {
                     backgroundColor: '#dd1d21',
                     padding: '0.5Rem'
                 }}
-                maxWidth="xl"
+                maxWidth="xxl"
             >
                 <Breadcrumbs
                     sx={{
@@ -129,7 +129,7 @@ const EmployeesPage = () => {
                     className='bg'
                 >
                     <Container
-                        maxWidth="xl"
+                        maxWidth="xxl"
                     >
                         <Box
                             sx={{

@@ -114,7 +114,7 @@ function WagesPage() {
                     borderBottom: '0.5px solid #dd1d21',
                     background: 'linear-gradient(to right, #FFffff, #999999)'
                 }}
-                maxWidth="xl"
+                maxWidth="xxl"
             >
                 <Box
                     sx={{
@@ -165,7 +165,7 @@ function WagesPage() {
                     backgroundColor: '#dd1d21',
                     padding: '0.5Rem'
                 }}
-                maxWidth="xl"
+                maxWidth="xxl"
             >
                 <Breadcrumbs
                     sx={{
@@ -283,7 +283,7 @@ function WagesPage() {
                                         className='bg'
                                     >
                                         <Container
-                                            maxWidth="xl"
+                                            maxWidth="xxl"
                                         >
                                             <Box
                                                 sx={{

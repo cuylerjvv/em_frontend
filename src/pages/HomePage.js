@@ -25,7 +25,7 @@ function HomePage() {
                     borderBottom: '0.5px solid #dd1d21',
                     background: 'linear-gradient(to right, #FFffff, #999999)'
                 }}
-                maxWidth="xl"
+                maxWidth="xxl"
             >
                 <Box
                     sx={{
@@ -65,7 +65,7 @@ function HomePage() {
                     backgroundColor: '#dd1d21',
                     padding: '0.5Rem'
                 }}
-                maxWidth="xl"
+                maxWidth="xxl"
             >
                 <Breadcrumbs
                     sx={{
@@ -83,7 +83,7 @@ function HomePage() {
             </Container>
 
             <Container
-                maxWidth="xl"
+                maxWidth="xxl"
                 className='bg'
                     
             >

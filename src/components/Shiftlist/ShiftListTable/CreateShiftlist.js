@@ -168,7 +168,7 @@ function CreateShiftlist() {
                     borderBottom: '0.5px solid #dd1d21',
                     background: 'linear-gradient(to right, #FFffff, #999999)'
                 }}
-                maxWidth="xl"
+                maxWidth="xxl"
             >
                 <Box
                     sx={{
@@ -207,7 +207,7 @@ function CreateShiftlist() {
                     backgroundColor: '#dd1d21',
                     padding: '0.5Rem'
                 }}
-                maxWidth="xl"
+                maxWidth="xxl"
             >
                 <Breadcrumbs
                     sx={{
@@ -246,7 +246,7 @@ function CreateShiftlist() {
                             alignItems: 'center',
                             paddingTop: '5rem'
                         }}
-                        maxWidth="xl"
+                        maxWidth="xxl"
                     >
                         <Box>
                             <Button
@@ -409,7 +409,7 @@ function CreateShiftlist() {
                     className='bg'
                 >
                     <Container
-                        maxWidth="xl"
+                        maxWidth="xxl"
                         sx={{
                             display: 'flex',
                             flexDirection: 'column',
@@ -479,7 +479,7 @@ function CreateShiftlist() {
                         sx={{
                             p: '3rem',
                         }}
-                        maxWidth="xl"
+                        maxWidth="xxl"
                     >
                         <Box
                             sx={{
