@@ -15,10 +15,12 @@ Core functionality:
 - Create shift lists by assigning employees to shifts.
 - View the wages per week based on the shift lists created. 
 
+APP WORK FLOW:
+
 The client has two fuel stations, thus the app and database is split in to two parts. 
 On the home screen you can select the fuel station you want to work with. 
 
-![home-page](./src/images/FMS-Home.png)
+![home-page](./src/images/FMS-Home.png) 
 
 Once a fuel station has been selected, the main menu is displayed.
 From here you can select whether you want to go to the employees page, shift lists page, or the wages pages.
