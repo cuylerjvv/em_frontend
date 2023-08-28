@@ -18,19 +18,19 @@ Core functionality:
 The client has two fuel stations, thus the app and database is split in to two parts. 
 On the home screen you can select the fuel station you want to work with. 
 
-![home-page](./frontend/src/images/FMS-Home.png)
+![home-page](./src/images/FMS-Home.png)
 
 Once a fuel station has been selected, the main menu is displayed.
 From here you can select whether you want to go to the employees page, shift lists page, or the wages pages.
 
-![menu-page](./frontend/src/images/FMS-Menu.png)
+![menu-page](./src/images/FMS-Menu.png)
 
 Employees page:
 
 On the employees page, you can view the current employees or create new employees.
 The employees and their relevant information is stored in a MongoDB database.  
 
-![employee-page](./frontend/src/images/FMS-Employees.png)
+![employee-page](./src/images/FMS-Employees.png)
 
 Shift list page: 
 
@@ -38,10 +38,10 @@ On the shift list page the created shift lists are displayed.
 You can select from the current created employees to assign them to shifts
 The shift lists are stored in a MongoDB database.
 
-![shift-list-page](./frontend/src/images/FMS-Shift-lists.png)
+![shift-list-page](./src/images/FMS-Shift-lists.png)
 
 Wages page: 
  
 On the wages page you can see the calculated wages of each employee for the relevant shift list. 
 
-![wages-page](./frontend/src/images/FMS-Wages.png)
+![wages-page](./src/images/FMS-Wages.png)
